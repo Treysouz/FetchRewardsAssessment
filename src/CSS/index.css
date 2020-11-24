@@ -1,7 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+main {
+  padding: 2vh 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main h1,
+main h2,
+main th {
+  font-family: "Lato", sans-serif;
+}
+
+main h1 {
+  color: #300c39;
+  text-align: center;
+  font-size: 2rem;
+}
+
+main h2 {
+  color: #fba819;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+main p,
+main td {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.2rem;
+}
+
+main .tableContainer {
+  margin-top: 5vh;
+  max-height: 75vh;
+  overflow: auto;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 5px 15px 0px #cccccc;
+          box-shadow: 0 5px 15px 0px #cccccc;
+}
+
+main .tableContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+main .tableContainer::-webkit-scrollbar-track {
+  background: gray;
+}
+
+main .tableContainer::-webkit-scrollbar-thumb {
+  background: #fba819;
+}
+
+main .tableContainer::-webkit-scrollbar-thumb:hover {
+  background: rgba(251, 168, 25, 0.5);
+}
+
+main .tableContainer table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+main .tableContainer table .errorMsg {
+  position: absolute;
+  text-align: center;
+  display: block;
+  width: 100%;
+  left: 0;
+}
+
+main .tableContainer table th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  background-color: #300c39;
+  color: #fba819;
+}
+
+main .tableContainer table th,
+main .tableContainer table td {
+  text-align: center;
+  padding: 2% 1%;
+}
+
+@media (max-width: 800px) {
+  main h1 {
+    font-size: 1.5rem;
+  }
+  main h2 {
+    font-size: 1.2rem;
+  }
+  main .tableContainer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  main h1 {
+    font-size: 1.2rem;
+  }
+  main h2 {
+    font-size: 1rem;
+  }
+  main td, main p {
+    font-size: .8rem;
+  }
+  main .tableContainer {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=index.css.map */
